@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aether Climate Engineering designs bespoke, invisible climate control systems and architectural HVAC solutions for luxury Texas estates.">
+    <title>Aether Climate Engineering | Architectural HVAC & Climate Curation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient Glow Blobs -->
+    <div class="ambient-glow-container">
+        <div class="glow-blob glow-warm" id="glow-warm-1"></div>
+        <div class="glow-blob glow-cool" id="glow-cool-1"></div>
+        <div class="glow-blob glow-warm" id="glow-warm-2"></div>
+        <div class="glow-blob glow-cool" id="glow-cool-2"></div>
+    </div>
+
+    <!-- Decorative SVG Airflow Paths -->
+    <div class="airflow-svg-container">
+        <svg class="airflow-svg" viewBox="0 0 100 1000" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="airflow-path" d="M -10 50 Q 80 200 20 400 T 90 700 T -10 950" />
+            <path class="airflow-path" d="M 110 100 Q 20 300 80 550 T 10 800 T 110 990" />
+        </svg>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="nav-logo">AETHER<span class="logo-dot">.</span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about-us" class="nav-link magnetic" data-strength="15">about-us</a></li>
+                    <li><a href="#services" class="nav-link magnetic" data-strength="15">Services</a></li>
+                    <li><a href="#testimonials" class="nav-link magnetic" data-strength="15">Testimonials</a></li>
+                    <li><a href="#portfolio" class="nav-link magnetic" data-strength="15">Engineering</a></li>
+                    <li><a href="#contact" class="nav-link btn-nav magnetic" data-strength="20">Consult</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Menu" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full-Bleed Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="section-container hero-container">
+            <div class="hero-grid">
+                <div class="hero-content-left">
+                    <span class="hero-tag gsap-reveal-fade">Architectural Climate Engineering</span>
+                    <h1 class="hero-title">
+                        <span class="reveal-line"><span class="reveal-inner">Silent Comfort.</span></span><br>
+                        <span class="hero-highlight"><span class="reveal-line"><span class="reveal-inner">Invisible Design.</span></span></span>
+                    </h1>
+                    <p class="hero-subtitle gsap-reveal-fade">We engineer bespoke climate systems hidden seamlessly within the lines of luxury residential architecture. Whisper-quiet, pure, and perfectly balanced.</p>
+                    <div class="hero-actions gsap-reveal-fade">
+                        <a href="#portfolio" class="btn btn-primary magnetic" data-strength="20">Our Craft <span class="btn-arrow">&rarr;</span></a>
+                        <a href="#contact" class="btn btn-secondary magnetic" data-strength="20">Request Consultation</a>
+                    </div>
+                </div>
+                <div class="hero-content-right gsap-reveal-fade">
+                    <div class="hero-specs-card">
+                        <div class="spec-item">
+                            <span class="spec-label">SOUND LEVEL</span>
+                            <span class="spec-val">&lt; 18 dB</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">VISIBILITY</span>
+                            <span class="spec-val">0% (HIDDEN)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">ZONING</span>
+                            <span class="spec-val">VARIABLE FLOW</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">LOCATIONS</span>
+                            <span class="spec-val">ATX / DFW / HOU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about-us Section -->
+    <section class="about-section" id="about-us">
+        <div class="section-container">
+            <div class="about-overlap-grid">
+                <div class="about-text-content scroll-reveal">
+                    <span class="section-tag gsap-tag">ENGINEERING ABOUT-US</span>
+                    <h2 class="section-title gsap-title">We believe the perfect climate is felt, never seen.</h2>
+                    <p class="about-us-quote">"True luxury is air that flows silently and systems that integrate seamlessly into architectural lines."</p>
+                    <p class="about-desc">For custom estates in Texas, generic cooling grilles and loud compressors disrupt both the visual design and acoustic peace. We partner with architects and interior designers to build hidden air pathways and noise-dampened systems that maintain the home's aesthetic integrity while delivering pristine temperature zones.</p>
+                </div>
+                <div class="about-image-column scroll-reveal delay-1">
+                    <div class="about-image-wrapper">
+                        <img src="assets/slot_diffuser.png" alt="Sleek modern linear ceiling slot diffuser detail" class="about-img">
+                        <div class="about-image-label">MODEL: ASD-120 // LINEAR DIFFUSION</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="services-intro scroll-reveal">
+                <span class="section-tag gsap-tag">SERVICES</span>
+                <h2 class="section-title gsap-title">Premium Climate Solutions</h2>
+            </div>
+            <div class="services-bento-grid">
+                <!-- Service 1: Architectural Ventilation -->
+                <div class="service-card scroll-reveal bento-col-2">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                            <line x1="8" y1="3" x2="8" y2="21" stroke-dasharray="3 3"></line>
+                            <line x1="16" y1="3" x2="16" y2="21" stroke-dasharray="3 3"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Architectural Ventilation</h3>
+                    <p class="service-desc">Custom integrated linear slot diffusers and wall plenums built to hide all duct outlets while ensuring whisper-quiet air distribution.</p>
+                </div>
+                
+                <!-- Service 2: Multi-Zone VRF Systems -->
+                <div class="service-card scroll-reveal delay-1">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="6" height="6"></rect>
+                            <path d="M12 9V3M12 15V21M9 12H3M15 12H21"></path>
+                            <circle cx="12" cy="3" r="1.5" fill="currentColor"></circle>
+                            <circle cx="12" cy="21" r="1.5" fill="currentColor"></circle>
+                            <circle cx="3" cy="12" r="1.5" fill="currentColor"></circle>
+                            <circle cx="21" cy="12" r="1.5" fill="currentColor"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Multi-Zone VRF Systems</h3>
+                    <p class="service-desc">Advanced Variable Refrigerant Flow engineering to allow individual climate settings for every room with maximum energy efficiency.</p>
+                </div>
+                
+                <!-- Service 3: Indoor Air Purification -->
+                <div class="service-card scroll-reveal delay-2">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M12 8v5M12 15h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Indoor Air Purification</h3>
+                    <p class="service-desc">Medical-grade HEPA, carbon, and active ionization purification systems integrated directly into home air handlers.</p>
+                </div>
+                
+                <!-- Service 4: AC Repair & Fix -->
+                <div class="service-card scroll-reveal bento-col-2">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19M12 6l3 3M12 6L9 9M12 18l3-3M12 18l-3 3M6 12l3 3M6 12l-3 3M18 12l-3-3M18 12l3 3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AC Repair & Fix</h3>
+                    <p class="service-desc">Precision diagnostics, rapid cooling repairs, and refrigerant calibration for luxury central air conditioning systems.</p>
+                </div>
+                
+                <!-- Service 5: Heater Repair -->
+                <div class="service-card scroll-reveal delay-1">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Heating System Repair</h3>
+                    <p class="service-desc">High-performance troubleshooting and thermal component restoration for premium furnace and heat pump assemblies.</p>
+                </div>
+                
+                <!-- Service 6: Regular Tune-Ups -->
+                <div class="service-card scroll-reveal delay-2 bento-col-2">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+                            <path d="M21 3v5h-5"></path>
+                            <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+                            <path d="M3 21v-5h5"></path>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Regular Tune-Ups</h3>
+                    <p class="service-desc">Multi-point thermodynamic calibration, airflow testing, and system tuning to maintain optimal performance and longevity.</p>
+                </div>
+                
+                <!-- Service 7: Air Duct Cleaning -->
+                <div class="service-card scroll-reveal service-card-wide bento-col-3">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
+                        </svg>
+                    </div>
+                    <div class="service-wide-content">
+                        <h3 class="service-title">Air Duct Cleaning & Sealing</h3>
+                        <p class="service-desc">Comprehensive dust and allergen extraction with premium seal treatments to maintain pure air pressure and silent distribution pathways.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Client Feedback Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-container">
+            <div class="testimonials-split-layout">
+                <div class="testimonials-sidebar scroll-reveal">
+                    <span class="badge gsap-tag">
+                        <svg class="badge-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5L6 12.5L7.41 11.09L10 13.67L16.59 7.09L18 8.5L10 16.5Z" fill="currentColor"/>
+                        </svg>
+                        Partners
+                    </span>
+                    <h2 class="section-title gsap-title">Trusted by Design Visionaries</h2>
+                    <p class="section-subtitle">Delivering silent comfort and invisible design for those who value architectural integrity and pristine engineering.</p>
+                </div>
+                
+                <div class="testimonials-list-column">
+                    <!-- Testimonial Item 1 -->
+                    <div class="testimonial-list-item scroll-reveal">
+                        <div class="item-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="item-quote">"Aether integrated their systems perfectly into our ceiling plaster details. You can't hear a thing, and you can't see a single grille. Absolutely flawless engineering."</p>
+                        <div class="item-author">
+                            <img src="assets/avatar_harrison.png" alt="Harrison Vance" class="author-img">
+                            <div class="author-info">
+                                <h4 class="author-name">Harrison Vance</h4>
+                                <p class="author-role">Westlake Hills Resident</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial Item 2 -->
+                    <div class="testimonial-list-item scroll-reveal">
+                        <div class="item-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="item-quote">"As an architect, finding an HVAC engineer who respects design lines is rare. Aether is our go-to partner for every luxury build."</p>
+                        <div class="item-author">
+                            <img src="assets/avatar_sarah.png" alt="Sarah Ndiaye" class="author-img">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Ndiaye</h4>
+                                <p class="author-role">Principal, Ndiaye Architects</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial Item 3 -->
+                    <div class="testimonial-list-item scroll-reveal">
+                        <div class="item-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="item-quote">"Whisper-quiet performance, precise zoning, and a mechanical room that looks like a work of art. The engineering is unparalleled."</p>
+                        <div class="item-author">
+                            <img src="assets/avatar_leo.png" alt="Leo Tanaka" class="author-img">
+                            <div class="author-info">
+                                <h4 class="author-name">Leo Tanaka</h4>
+                                <p class="author-role">Tanaka Custom Homes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom stats inline -->
+                    <div class="testimonials-stats-row scroll-reveal">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Luxury Estates</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">&lt; 18dB</span>
+                            <span class="stat-label">Silent Operation</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Invisible Outlets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Engineering Showcase Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-container">
+            <div class="portfolio-header scroll-reveal">
+                <div>
+                    <span class="section-tag gsap-tag">ENGINEERING CRAFT</span>
+                    <h2 class="section-title gsap-title">Invisible Precision</h2>
+                </div>
+            </div>
+
+            <!-- Asymmetric Grid of Case Studies -->
+            <div class="portfolio-offset-grid" id="portfolio-grid">
+                
+                <!-- Project 1 (Architectural Slots) -->
+                <div class="grid-item tall scroll-reveal">
+                    <div class="project-card">
+                        <img src="assets/slot_diffuser.png" alt="Ceiling integration of linear slot diffuser">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Linear Integration</span>
+                                <h3 class="project-title">Westlake Hills Manor</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Mechanical Systems) -->
+                <div class="grid-item scroll-reveal delay-1">
+                    <div class="project-card">
+                        <img src="assets/mechanical_room.png" alt="Immaculate mechanical room layout">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Mechanical Craftsmanship</span>
+                                <h3 class="project-title">Custom Geothermal Array</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Smart Control) -->
+                <div class="grid-item scroll-reveal">
+                    <div class="project-card">
+                        <img src="assets/thermostat.png" alt="Illuminated smart thermostat control">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Automation</span>
+                                <h3 class="project-title">Integrated Control Systems</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (High-end Home Design) -->
+                <div class="grid-item wide scroll-reveal delay-1">
+                    <div class="project-card">
+                        <img src="assets/hero.png" alt="Luxury home interior showing integrated cooling comfort">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Architectural Harmony</span>
+                                <h3 class="project-title">The Austin Pavilion</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info-panel scroll-reveal">
+                    <span class="section-tag gsap-tag">CONSULTATIONS</span>
+                    <h2 class="section-title gsap-title">Schedule an Engineering Review</h2>
+                    <p class="contact-pitch">We consult during the architectural planning stage of luxury custom homes in Austin, Dallas, and Houston. Connect with our engineering directors.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>Texas Studios</h4>
+                            <p>801 Congress Ave, Suite 300<br>Austin, TX 78701</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Direct Lines</h4>
+                            <p><a href="mailto:engineering@aetherclimate.com">engineering@aetherclimate.com</a></p>
+                            <p><a href="tel:+15125550180">+1 (512) 555-0180</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-panel scroll-reveal delay-1">
+                    <form id="enquiry-form" class="enquiry-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Contact Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Preston Hughes">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="preston@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (512) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="project-city">Texas Region</label>
+                                <select id="project-city" name="project-city">
+                                    <option value="austin">Austin & Hill Country</option>
+                                    <option value="dallas">Dallas / Fort Worth</option>
+                                    <option value="houston">Greater Houston</option>
+                                    <option value="other">Other / Out of State</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message">Project Description</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Details about your build, the collaborating architect, and target square footage..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit magnetic" data-strength="15">Submit Request</button>
+                    </form>
+                    <div id="form-success-msg" class="success-banner hidden">
+                        <h4>Inquiry Received.</h4>
+                        <p>Our engineering division will coordinate with your project representative within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="section-container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aether Climate Engineering. All Rights Reserved. Engineered with precision.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger & Lenis CDNs -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
